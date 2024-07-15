@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELGrains.com</title>
+    <!-- Links -->
+    <link rel="icon" href="./assets/img/picsvg_download (1).svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="position-relative d-flex flex-column  justify-content-center">
+    <!-- Header section -->
+    <header class="header py-3">
+      <div class="container">
+        <!-- Navbar section -->
+        <!-- offcanves -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark position-fixed top-0 start-0 px-5 w-100"
+        >
+          <div class="container-fluid">
+            <div class="logo-container">
+              <a class="navbar-brand" href="/">
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="49.000000pt"
+                  height="67.000000pt"
+                  viewBox="0 0 109.000000 137.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,137.000000) scale(0.100000,-0.100000)"
+                    fill="#ff0000"
+                    stroke="none"
+                  >
+                    <path
+                      d="M416 1049 c-113 -39 -202 -112 -254 -209 -12 -23 -22 -44 -22 -46 0 -2 72 -4 160 -4 l160 0 0 25 0 25 -120 0 c-66 0 -120 2 -120 5 0 3 15 22 33 42 89 99 240 155 363 135 135 -22 247 -102 300 -212 25 -52 32 -60 56 -60 15 0 28 2 28 4 0 2 -14 32 -31 66 -84 163 -226 250 -408 250 -60 -1 -104 -7 -145 -21z m-206 -220 c0 -5 -7 -9 -15 -9 -9 0 -12 6 -9 15 6 15 24 11 24 -6z"
+                    />
+                    <path
+                      d="M525 640 l0 -210 127 0 c127 0 128 0 124 23 -3 21 -8 22 -99 25 l-97 3 0 184 0 185 -27 0 -28 0 0 -210z m40 -170 c3 -5 1 -10 -4 -10 -6 0 -11 5 -11 10 0 6 2 10 4 10 3 0 8 -4 11 -10z"
+                    />
+                    <path
+                      d="M120 635 l0 -25 170 0 170 0 0 25 0 25 -170 0 -170 0 0 -25z"
+                    />
+                    <path
+                      d="M770 635 c0 -25 0 -25 94 -25 l94 0 -13 -45 c-23 -74 -46 -115 -94 -164 -126 -129 -339 -157 -496 -66 -35 20 -115 88 -115 97 0 2 49 1 110 0 l110 -4 0 26 0 26 -156 0 c-121 0 -154 -3 -148 -12 10 -17 66 -90 79 -103 28 -28 95 -74 135 -92 99 -45 206 -54 311 -25 179 50 300 186 324 365 l6 47 -120 0 -121 0 0 -25z m210 -15 c0 -5 -2 -10 -4 -10 -3 0 -8 5 -11 10 -3 6 -1 10 4 10 6 0 11 -4 11 -10z m-740 -174 c-25 -14 -40 -13 -40 5 0 5 15 9 33 9 l32 -1 -25 -13z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <span class="logo">EMBEDDED AND LOOSE GRAINS</span>
+              <span class="logo-sol"> SOLUTION</span>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-lg-none d-flex jusfity-content-between w-50"
+              >
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#product">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicse">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //Navbar section -->
+
+        <!-- Intro section -->
+        <section id="home" class="intro">
+          <div class="content text-center text-light p-3">
+            <h1
+              class="main-heading fw-bold p-3"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              Revolutionizing Abrasive Solutions!
+            </h1>
+            <p
+              class="support-par fs-6"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              we create cutting-edge abrasive solutions for precision lapping.
+              Elevate your results today!
+            </p>
+            <button
+              class="btn btn-outline mt-3"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
+              <a href="#about">About Us</a>
+            </button>
+          </div>
+        </section>
+        <!-- //Intro section -->
+      </div>
+    </header>
+    <!-- //Header section -->
+
+    <!-- About section -->
+    <section class="about px-4 my-5" id="about">
+      <div class="container">
+        <div class="section-top_text mb-4 text-center">
+          <p class="first my-5" data-aos="zoom-in">About</p>
+          <h2 class="main-title py-2" data-aos="zoom-in">
+            Learn More <span>About Us</span>
+          </h2>
+        </div>
+        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="col-md-12 column_at">
+              <p class="lh-base text-break">
+                <span class="fs-1">w</span>elcome to EMBEDDED AND LOOSE GRAINS
+                SOLUTION, your trusted partner in advanced abrasive solutions
+                for the lapping process. As a dynamic startup, we are dedicated
+                to revolutionizing the precision and efficiency of lapping
+                through innovative technologies and exceptional customer
+                service.
+              </p>
+            </div>
+            <div class="col-md-12 column_at">
+              <p class="lh-lg">
+                At EMBEDDED AND LOOSE GRAINS SOLUTION, our mission is to deliver
+                cutting-edge abrasive solutions that enhance the performance and
+                quality of lapping processes across various industries. We
+                strive to provide products that meet the highest standards of
+                precision, durability, and reliability.
+              </p>
+              <div class="col-md-6 px-5">
+                <h1 class="py-3 fs-3">What We Offer</h1>
+                <ul class="lh-lg">
+                  <li>Abrasive Powders</li>
+                  <li>Lapping Compounds</li>
+                  <li>Lapping Machines and Accessories</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //About section -->
+
+    <!-- Products section -->
+    <section id="product" class="Products mt-5 mb-5">
+      <div class="container">
+        <div class="section-top_text mb-4 text-center">
+          <p class="first my-5" data-aos="fade-up">Products</p>
+          <h2 class="main-title py-2">
+            We do offer awesome <span>Products</span>
+          </h2>
+        </div>
+        <div class="content">
+          <div class="row my-5 container">
+          <div class="col-md-4">
+            <div class="card"><img src="./assets/img/hero-bg.jpeg" alt="" width="400" height="400" class="cover rounded"></div>
+            <div class="overlay"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="card"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="card"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //Products section -->
+    <!-- Our Team -->
+         <section id="servicse" class="Products mt-5 mb-5">
+      <div class="container">
+        <div class="section-top_text mb-4 text-center">
+          <p class="first my-5" data-aos="fade-up">Our Team</p>
+          <h2 class="main-title py-2" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-center">
+            Welcome Meet  <span>Our Team</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4"  data-aos="zoom-in-up" data-aos-delay="500">
+            <div class="outer">
+              <div class="box">
+                 <div class="imgBox">
+        <img src="https://bit.ly/3Y5oMQG" alt="">
+      </div>
+      <div class="card-text">
+        <h2>Karan Singh</br>
+          <span>Graphic Designer</span>
+        </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+            <div class="outer">
+              <div class="box">
+                 <div class="imgBox">
+        <img src="https://bit.ly/3Y5oMQG" alt="">
+      </div>
+      <div class="card-text">
+        <h2>Karan Singh</br>
+          <span>Graphic Designer</span>
+        </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+            <div class="outer">
+              <div class="box">
+                 <div class="imgBox">
+        <img src="https://bit.ly/3Y5oMQG" alt="">
+      </div>
+      <div class="card-text">
+        <h2>Karan Singh</br>
+          <span>Graphic Designer</span>
+        </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <!-- Contact Us section -->
+    <section id="contact" class="contact my-5">
+      <div class="container">
+        <div class="section-top_text mb-4 text-center">
+          <p class="first mt-5 mb-2">CONTACT</p>
+          <h2 class="main-title py-2">Contact <span>Us</span></h2>
+          <p class="text fw-bold w-50 mx-auto">
+             
+          </p>
+        </div>
+        <div class="content">
+          <div class="row my-5">
+            <div class="col-md-6 my-3">
+              <div class="column_ct text">
+                <div
+                  class="row_ct my-2 d-flex align-items-center jusfity-content-start"
+                >
+                  <div class="icon me-3">
+                    <i class="fa-solid fa-location-dot fs-3"></i>
+                  </div>
+                  <div class="description ms-2">
+                    <h4 class="title">Location:</h4>
+                    <p class="addition">
+                      No.2/16 Thiruvalluvar Street, Mettukuppam,Vanagaram (Near
+                      Porur Toll Plaza), Chennai - 600 095, Tamilnadu state,
+                      India.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="row_ct my-2 d-flex align-item-center jusfity-content-start"
+                >
+                  <div class="icon me-3">
+                    <i class="fa-solid fa-envelope fs-3"></i>
+                  </div>
+                  <div class="description m-2">
+                    <h4 class="title">Email:</h4>
+                    <p class="addition">elgrainssolutions@gmail.com</p>
+                  </div>
+                </div>
+                <div
+                  class="row_ct my-2 d-flex align-item-center jusfity-content-start"
+                >
+                  <div class="icon me-3">
+                    <i class="fas fa-mobile fs-3"></i>
+                  </div>
+                  <div class="description m-2">
+                    <h4 class="title">Call:</h4>
+                    <p class="addition">+91 8754765338</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 my-3">
+              <div class="column_ct text-center">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control my-3"
+                      placeholder="First name"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control my-3"
+                      placeholder="Last name"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="my-3">
+                  <input
+                    type="text"
+                    class="form-control my-3"
+                    placeholder="Subject"
+                    aria-lebel="Subject"
+                  />
+                </div>
+                <div class="form-floating my-4">
+                  <textarea
+                    class="form-control my-3" rows="50"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
+                <button class="btn mx-auto">
+                  <a href="#">Send Message</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //Contact Us section -->
+    <!-- Footer section -->
+    <!-- Javascript links -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS -->
+    <!-- additional script for card -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- card -->
+    <script src="./assets/js/var.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
